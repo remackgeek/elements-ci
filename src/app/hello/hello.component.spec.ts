@@ -1,6 +1,8 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { HelloComponent } from './hello.component';
+import { BrowserModule } from '@angular/platform-browser';
+import { FormsModule } from '@angular/forms';
 
 describe('HelloComponent', () => {
   let component: HelloComponent;
@@ -8,7 +10,11 @@ describe('HelloComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ HelloComponent ]
+      declarations: [ HelloComponent ],
+      imports: [
+        BrowserModule,
+        FormsModule
+      ]
     })
     .compileComponents();
   }));
