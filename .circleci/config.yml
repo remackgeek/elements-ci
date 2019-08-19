@@ -32,5 +32,11 @@ jobs:
             - node_modules
           key: v1-dependencies-{{ checksum "package.json" }}
 
+      # build library
+      - run: npm run build:lib
+
+      # build app
+      - run: npm run build:app
+
       # run tests!
-      - run: npm test
+      - run: npm run test:app

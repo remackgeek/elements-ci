@@ -8,7 +8,9 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "build:lib": "ng build --prod elements-zone-strategy"
+    "build:lib": "ng build --prod elements-zone-strategy",
+    "build:app": "ng build --prod elements-zone-strategy-app",
+    "test:app": "ng test elements-zone-strategy-app --watch=false"
   },
   "private": true,
   "dependencies": {
