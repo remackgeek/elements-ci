@@ -4,12 +4,10 @@ import { NgModule, Injector } from '@angular/core';
 
 import { ElementZoneStrategyFactory } from 'elements-zone-strategy';
 import { createCustomElement } from '@angular/elements';
-import { HelloComponent } from './hello/hello.component';
 import { AppComponent, RatingService } from './app.component';
 
 @NgModule({
   declarations: [
-    HelloComponent,
     AppComponent
   ],
   providers: [RatingService],
@@ -17,7 +15,7 @@ import { AppComponent, RatingService } from './app.component';
     BrowserModule,
     FormsModule
   ],
-  entryComponents: [HelloComponent, AppComponent],
+  entryComponents: [AppComponent],
 
 })
 export class AppModule {
