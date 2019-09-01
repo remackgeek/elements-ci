@@ -10,7 +10,8 @@
     "e2e": "ng e2e",
     "build:lib": "ng build --prod elements-zone-strategy",
     "build:app": "ng build --prod elements-zone-strategy-app",
-    "test:app": "ng test elements-zone-strategy-app --watch=false"
+    "test:app": "ng test elements-zone-strategy-app --watch=false",
+    "test:e2e": "ng e2e"
   },
   "private": true,
   "dependencies": {
