@@ -38,7 +38,10 @@ jobs:
       # build app
       - run: npm run build:app
 
-      # run tests!
+      # run lib tests
+      - run: npm run test:lib
+
+      # run app tests
       - run: npm run test:app
       
       # run e2e tests!

@@ -11,6 +11,7 @@
     "build:lib": "ng build --prod elements-zone-strategy",
     "build:app": "ng build --prod elements-zone-strategy-app",
     "test:app": "ng test elements-zone-strategy-app --watch=false",
+    "test:lib": "ng test elements-zone-strategy --watch=false",
     "test:e2e": "ng e2e"
   },
   "private": true,
