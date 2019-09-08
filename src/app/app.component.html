@@ -4,7 +4,7 @@
   </div>
   <div class="my-rating">
     <div *ngFor="let rating of ratingStates;let ratingIndex=index">
-      <div class="rating" [ngClass]="{ 'filled': rating }" (click)="handleRatingClicked(ratingIndex)">
+      <div class="rating {{'index'+ratingIndex}}" [ngClass]="{ 'filled': rating }" (click)="handleRatingClicked(ratingIndex)">
       </div>
     </div>
   </div>
