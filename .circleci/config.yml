@@ -47,6 +47,17 @@ jobs:
       # run e2e tests!
       - run: npm run test:e2e
 
+      # create package
+      - run: npm run pack:lib
+
+      # move package
+      - run: npm run move:lib
+
+      # upload package
+      - store_artifacts:
+          path: artifacts
+
+
 workflows:
   version: 2
   build:

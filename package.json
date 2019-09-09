@@ -8,6 +8,8 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
+    "pack:lib": "cd dist/elements-zone-strategy && npm pack",
+    "move:lib": "rm -rf artifacts && mkdir artifacts && cp dist/elements-zone-strategy/*.tgz artifacts",
     "build:lib": "ng build --prod elements-zone-strategy",
     "build:app": "ng build --prod elements-zone-strategy-app",
     "test:app": "ng test elements-zone-strategy-app --watch=false",
