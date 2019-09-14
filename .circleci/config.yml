@@ -68,8 +68,8 @@ jobs:
       - attach_workspace:
           at: dist
 
-      # build app
-      - run: ls -ls dist
+      # deploy to npm
+      - run: npm publish dist/elements-zone-strategy --dry-run
 
 workflows:
   version: 2
