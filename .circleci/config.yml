@@ -55,7 +55,8 @@ jobs:
       - persist_to_workspace:
           root: dist
           paths:
-            - elements-zone-strategy
+            - "elements-zone-strategy"
+            
  deploy:
     docker:
       # specify the version you desire here
