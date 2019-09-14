@@ -56,7 +56,6 @@ jobs:
           root: dist
           paths:
             - elements-zone-strategy
-  
  deploy:
     docker:
       # specify the version you desire here
