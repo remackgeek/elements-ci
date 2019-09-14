@@ -51,7 +51,7 @@ jobs:
       - store_artifacts:
           path: dist
 
-      save package for downstream
+      # save package for downstream
       - persist_to_workspace:
           root: dist
           paths:
