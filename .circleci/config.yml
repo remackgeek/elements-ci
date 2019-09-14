@@ -52,11 +52,11 @@ jobs:
           path: dist
 
       # save package for downstream
-      - persist_to_workspace:
-          root: dist
-          paths:
-            - "elements-zone-strategy"
-            
+      # - persist_to_workspace:
+      #     root: dist
+      #     paths:
+      #       - "elements-zone-strategy"
+
  deploy:
     docker:
       # specify the version you desire here
@@ -70,9 +70,9 @@ jobs:
     working_directory: ~/repo
 
     steps:
-      - attach_workspace:
-          # Must be absolute path or relative path from working_directory
-          at: dist
+      # - attach_workspace:
+      #     # Must be absolute path or relative path from working_directory
+      #     at: dist
 
       # dummy
       - run: ls -ls dist
