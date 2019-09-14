@@ -65,6 +65,9 @@ jobs:
     working_directory: ~/repo
 
     steps:
+      - attach_workspace:
+          at: dist
+
       # build app
       - run: ls -ls dist
 
@@ -73,6 +76,6 @@ workflows:
   build:
     jobs:
       - build_and_test
-      # - deploy:
-      #     requires:
-      #       - build_and_test
+      - deploy:
+          requires:
+            - build_and_test
