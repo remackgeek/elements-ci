@@ -22,3 +22,5 @@ use the new strategy:
     const strategyFactory = new ElementZoneStrategyFactory(HelloComponent, this.injector);
     const helloElement = createCustomElement(HelloComponent, { injector: this.injector, strategyFactory });
     customElements.define('my-hello', helloElement);
+
+    extra line
