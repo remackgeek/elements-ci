@@ -23,4 +23,3 @@ use the new strategy:
     const helloElement = createCustomElement(HelloComponent, { injector: this.injector, strategyFactory });
     customElements.define('my-hello', helloElement);
 
-    extra line
